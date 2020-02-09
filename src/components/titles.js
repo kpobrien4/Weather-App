@@ -9,7 +9,7 @@ class Titles extends React.Component {
             <div>
 
                 <h1 className="containerTitle">Weather Scanner</h1>
-                <p className="containerSubtitle"> Find weather conditions in your city</p>
+                <p className="containerSubtitle">Find weather conditions in your city</p>
             </div>
         )
     }
