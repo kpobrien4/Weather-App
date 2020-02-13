@@ -15,6 +15,7 @@ class App extends React.Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
+    feels_like: undefined,
     error: undefined
   }
 
@@ -32,6 +33,7 @@ class App extends React.Component {
         country: response.sys.country,
         humidity: response.main.humidity,
         description: response.weather[0].description,
+        feels_like: response.main.feels_like,
         error: ""
       })
     }else{
@@ -61,6 +63,7 @@ class App extends React.Component {
                     country={this.state.country}
                     humidity={this.state.humidity}
                     description={this.state.description}
+                    feels_like={this.state.feels_like}
                     error={this.state.error}
                   />
                 </div>
